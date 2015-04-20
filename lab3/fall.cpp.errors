@@ -1,0 +1,16 @@
+fall.cpp: In member function ‘void Chutist::display(bool) const’:
+fall.cpp:38: error: expected primary-expression before ‘(’ token
+fall.cpp:38: error: expected primary-expression before ‘)’ token
+fall.cpp: In function ‘int ccc_win_main()’:
+fall.cpp:61: error: expected primary-expression before ‘(’ token
+fall.cpp:61: error: expected primary-expression before ‘loc’
+fall.cpp:62: error: ‘class Circle’ has no member named ‘display’
+fall.cpp:63: error: ‘Triangle’ was not declared in this scope
+fall.cpp:63: error: expected ‘;’ before ‘brake’
+fall.cpp:64: error: ‘brake’ was not declared in this scope
+fall.cpp:66: error: ‘height’ was not declared in this scope
+fall.cpp:69: error: expected ‘;’ before ‘if’
+fall.cpp:79: error: ‘y_velocity’ was not declared in this scope
+fall.cpp:82: error: ‘he_y’ was not declared in this scope
+fall.cpp:83: error: ‘he_x’ was not declared in this scope
+fall.cpp:86: error: ‘class Circle’ has no member named ‘display’

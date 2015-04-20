@@ -1,0 +1,20 @@
+fall_newmeth.cpp:101: error: expected ‘}’ at end of input
+fall_newmeth.cpp: In constructor ‘Chutist::Chutist(Point)’:
+fall_newmeth.cpp:33: error: a function-definition is not allowed here before ‘{’ token
+fall_newmeth.cpp:39: error: a function-definition is not allowed here before ‘{’ token
+fall_newmeth.cpp:57: error: expected ‘}’ at end of input
+fall_newmeth.cpp: In member function ‘int Chutist::ccc_win_main()’:
+fall_newmeth.cpp:70: error: expected primary-expression before ‘(’ token
+fall_newmeth.cpp:70: error: expected primary-expression before ‘loc’
+fall_newmeth.cpp:71: error: ‘class Circle’ has no member named ‘display’
+fall_newmeth.cpp:72: error: ‘Triangle’ was not declared in this scope
+fall_newmeth.cpp:72: error: expected ‘;’ before ‘brake’
+fall_newmeth.cpp:73: error: ‘brake’ was not declared in this scope
+fall_newmeth.cpp:75: error: ‘height’ was not declared in this scope
+fall_newmeth.cpp:78: error: expected ‘;’ before ‘if’
+fall_newmeth.cpp:88: error: ‘y_velocity’ was not declared in this scope
+fall_newmeth.cpp:91: error: ‘he_y’ was not declared in this scope
+fall_newmeth.cpp:92: error: ‘he_x’ was not declared in this scope
+fall_newmeth.cpp:95: error: ‘class Circle’ has no member named ‘display’
+fall_newmeth.cpp: At global scope:
+fall_newmeth.cpp:101: error: expected unqualified-id at end of input

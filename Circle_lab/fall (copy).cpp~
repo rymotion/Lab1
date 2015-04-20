@@ -1,0 +1,28 @@
+/* Program: circle.cpp */
+/* Ryan Paglinawan
+CSE 202 Lab 2
+*/
+#include "ccc_win.h"
+
+//the main program that will create the output display
+int ccc_win_main() {
+	//The height of the drop.
+	int height = 1000;
+	double velocity = 0;
+
+	cwin.coord(0,1250,1250,0);
+	Circle c(Point(625 , 1000), 100);
+	cwin << c;
+	
+	while (height > 0); {
+	velocity += 32;
+	if (velocity > 174) {
+		velocity = 174; }
+	height -= velocity;
+
+	c.move(0,velocity);
+	cwin << c;
+	}
+	return 0;
+}
+

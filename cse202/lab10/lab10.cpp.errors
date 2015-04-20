@@ -1,0 +1,5 @@
+/tmp/ccdDCeeu.o: In function `Mlist<int>::remove(int)':
+lab10.cpp:(.text._ZN5MlistIiE6removeEi[Mlist<int>::remove(int)]+0x42): undefined reference to `Mlist<int>::remove(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int)'
+/tmp/ccdDCeeu.o: In function `Mlist<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::remove(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+lab10.cpp:(.text._ZN5MlistISsE6removeESs[Mlist<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::remove(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)]+0x5a): undefined reference to `Mlist<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >::remove(__gnu_cxx::__normal_iterator<std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2: ld returned 1 exit status
