@@ -10,18 +10,23 @@
 
 using namespace std;
 
-time12::time12(){
-
+time12::time12(hours,minutes,day){
+	int hours = hours;
+	int minutes = ;
+	int seconds = 0;
 }
 int time12::hours(){
 
 }
-int time12::minute(){
+int time12::minutes(){
 
 }
-int time12::second(){
+int time12::seconds(){
 	
 }
+void int time12::convert(){
+
+}
 void time12::getTIme(){
-	
+	cout << "Current time is: " << hours << " " << minutes << " " << seconds << endl; 
 }

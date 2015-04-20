@@ -9,19 +9,21 @@
 
 using namespace std;
 
-time24::time24(){
+time24::time24(hours,minutes,day){
+	int hours = hours;
+	int minute = minutes;
+	int second = 0;
+	string day = day;
+}
+int time24::hours(){
 
 }
-int time24::hour(){
+int time24::minutes(){
 
 }
-int time24::minute(){
-
-}
-int time24::second(){
+int time24::seconds(){
 	
 }
-
 void time24::getTime(){
-	
+	cout << "Current time is: " << hours << " " << minutes << " " << seconds << endl; 
 }

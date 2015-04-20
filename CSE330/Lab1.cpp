@@ -11,9 +11,14 @@
 using namespace std;
 
 int main(){
-	int count = 5;
-	for (int i = 0; i < count; i++)
-	{
-		cout << "butts" << endl;
-	}
+  time12 t(8,15,AM);
+  t.writeTime();
+  t.readTime(); //Input 12:00 PM
+  t.addTime(180); // add 3 hours to t
+  t.writeTime();
+  time12 t1(8,15,PM);
+  t1.writeTime();
+  t1.readTime(); //Input 12:00 PM
+  t1.addTime(180); // add 3 hours to t
+  t1.writeTime();
 }
