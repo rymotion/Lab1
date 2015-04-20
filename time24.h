@@ -1,0 +1,1 @@
+// Class: CSE 330// Term: Spring 2015// Instructor: George M. Georgiou// Name(s): Mbusi Hlatshwayo Ryan Paglinawan// Lab 1// Title: time 24#include <iostream>using namespace std;class time24 {public:	time24();	int hours();	int minute();	int seconds();	virtual void getTime();	private:}
