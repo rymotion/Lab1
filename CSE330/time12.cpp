@@ -15,7 +15,7 @@ time12::time12(hou,min,day){
 	this -> minutes = min;
 	//this -> seconds = 0;
 }
-int time12::hours(){
+int time12::getHour(){
 
 }
 int time12::minutes(){
