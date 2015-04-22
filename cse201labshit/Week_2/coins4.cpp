@@ -1,20 +1,9 @@
-//
-//  coins.cpp
-//  
-//
 //  Created by Ryan Paglinawan on 10/7/14.
-//
-//
+
 
 #include <iostream>
 using namespace std;
-// this program is used to count coins as you would count in real life.
-//
-//it's c out not cout.
-//
-//
-//
-//
+
 
 int main()
 {

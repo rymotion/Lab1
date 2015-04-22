@@ -21,9 +21,9 @@ int time24::hours(){
 int time24::minutes(){
 
 }
-int time24::seconds(){
+void time24::addTime(){
 	
 }
 void time24::getTime(){
-	cout << "Current time is: " << hours << " " << minutes << " " << seconds << endl; 
+	cout << "Current time is: " << hours << " " << minutes << " " << seconds << " " << day << endl; 
 }

@@ -1,7 +1,3 @@
-//
-//  coins.cpp
-//  
-//
 //  Created by Ryan Paglinawan on 10/7/14.
 //
 //
