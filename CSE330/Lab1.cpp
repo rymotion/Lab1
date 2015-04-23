@@ -4,22 +4,25 @@
 // Name(s): Mbusi Hlatshwayo Ryan Paglinawan
 // Lab 1
 // Title: time 12
-//#include "time12.h"
-//#include "time24.h"
+
+#include "time12.h"
+#include "time24.h"
 #include <iostream>
-#include <string>
+#include <iomanip>
+
+#include "d_except.h"
 
 using namespace std;
 
 int main(){
-  time12 t(8,15,AM);
+  time24 t(08,15,AM);
   t.writeTime();
   t.readTime(); //Input 12:00 PM
   t.addTime(180); // add 3 hours to t
   t.writeTime();
   t.readTime();
 
-  time12 t1(8,15,PM);
+  time12 t1(08,15,PM);
   t1.writeTime();
   t1.readTime(); //Input 12:00 PM
   t1.addTime(180); // add 3 hours to t

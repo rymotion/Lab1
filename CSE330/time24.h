@@ -27,7 +27,7 @@ ostream& operator<< (ostream& ostr, const time24& r);
 class time24
 {
    public:
-      time24(int h = 0, int m = 0);
+      time24(int h, int m);
 	      // constructor initializes hour and minute
 
       void addTime(int m);

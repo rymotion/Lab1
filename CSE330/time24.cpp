@@ -6,6 +6,9 @@
 // Title: time 24
 #include "time24.h"
 #include <iostream>
+#include <iomanip>
+
+#include "d_except.h"
 
 using namespace std;
 
@@ -62,6 +65,7 @@ void time24::readTime()
    cin >> hour >> colonSeparator >> minute;
    // make sure hour and minute are in range
    normalizeTime();
+	cout << time12::convert() << endl;
 }
 
 // output time in the format <hour>:<minute>
