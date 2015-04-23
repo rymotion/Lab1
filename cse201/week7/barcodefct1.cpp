@@ -11,8 +11,7 @@ using namespace std;
 
 string digit_to_bars(int);
 
-int main()
-{
+int main() {
   int zip;
 
   // enter zip code as 5-digit integer;
@@ -22,8 +21,7 @@ int main()
 
   // validate; quit is zip is not 5-digit;
 
-  if (zip < 10000 or zip > 99999)
-    {
+  if (zip < 10000 or zip > 99999) {
       cout << "Invalid zip code";
       return 1;
     }
@@ -79,12 +77,10 @@ int main()
 
 // convert digit into corresponding barcode;
 
-string digit_to_bars (int dig)
-{
+string digit_to_bars (int dig) {
   string bars;
 
-  switch (dig)
-    {
+  switch (dig) {
     case 0:
       bars = "||:::";
       break;
@@ -120,4 +116,4 @@ string digit_to_bars (int dig)
     }
 
       return bars;
-    }
+}

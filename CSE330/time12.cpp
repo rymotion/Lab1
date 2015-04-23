@@ -18,12 +18,12 @@ time12::time12(hou,min,day):time24(hou,min){
 	this -> minutes = min;
 	//this -> seconds = 0;
 }
-int time12::getHour(){
+void time12::addTime(){
 
 }
-int time12::minutes(){
+void time12::readTime(){
 
 }
-void int time12::convert(){
-	
+void time12::writeTime(){
+
 }

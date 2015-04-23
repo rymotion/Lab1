@@ -1,6 +1,7 @@
 //  Created by Ryan Paglinawan on 10/7/14.
 //
 //  Please note that all these examples will be looking at the C++ Library
+//  Java again is similar, but the syntax for the header will be different
 
 #include <iostream>
 using namespace std;
@@ -29,7 +30,12 @@ int main() {
     //These are known as primitive data types, there are others which you will see
     //through out the code repository
     cin >> count;
+    //The ">>" and "<<" symbols work as a mean to input and output through various keywords
+    //"cin" is used as a way for input on these programs and will read up the press of the enter/return key
     double total = count * 0.01;
+    //Double is another primitive data keyword this allows for decimals to atleast two decimal spaces
+    //float another primitive data value allows even more decimal places and is primarily used over 
+    //both int and double you will see more primitive data values as you continue through these old programs
     
     cout << "how many nickels do you have? ";
     cin >> count;
@@ -47,8 +53,9 @@ int main() {
     cin >> count;
     total = count * 1.00 + total;
 
-    cout << endl;
-    cout << "You have "<< (int) total << " dollars ";
+    cout << endl;//The endl keyword works as a return key and creates a new line 
+    //another like it is \n that will do the same thing, but it can only be used inside a string
+    cout << "You have "<< (int) total << " dollars ";//The paranthesis make total which is a double have the property of an int
     cout << "and " << (total - (int) total) * 100 << " cents. Congrats.";
     cout << endl;
     

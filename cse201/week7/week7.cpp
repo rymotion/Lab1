@@ -11,8 +11,7 @@ using namespace std;
 string digit_to_bars(int);
 int checkdigit(int,int,int,int,int);
 string barcode(int);
-int main()
-{
+int main() {
   int i = 1;
   do{
   int zip;
@@ -24,8 +23,7 @@ int main()
 
   // validate; quit if zip is not 5-digit;
 
-  if (zip < 10000 or zip > 99999)
-    {
+  if (zip < 10000 or zip > 99999) {
       cout << "Invalid zip code" << endl;
       return 1;
     }
@@ -34,14 +32,12 @@ int main()
   cout << "Your zip code of " << zip << " is " << barcode(zip) << endl << endl;
 
   return 0;
-}while(i!=0);
-{
-  return 0;
-}
+}while(i!=0); {
+    return 0;
+  }
 }
 
-string digit_to_bars(int dig)
-{
+string digit_to_bars(int dig) {
   string bars;
 //brings in the bars as strings that will later be placed out in text.
   switch (dig) //bars have switched to the place holder int dig
@@ -81,8 +77,7 @@ string digit_to_bars(int dig)
   }
   return bars; //returns bars aka dig
 }
-int checkdigit(int d1,int d2, int d3, int d4, int d5)
-{
+int checkdigit(int d1,int d2, int d3, int d4, int d5){
   /*
   This function brings in the five numbers from zip
   and varifies that
@@ -92,21 +87,14 @@ int checkdigit(int d1,int d2, int d3, int d4, int d5)
   int cdig;
   int sum = d1 + d2 + d3 + d4 + d5;
 
-  if( sum%10 == 0 )
-    {
-      cdig = 0;
-    }
+  if( sum%10 == 0 ) cdig = 0;
 
-  else
-    {
-      cdig = ( 1 + sum/10 ) * 10 - sum;
-    }
+  else cdig = ( 1 + sum/10 ) * 10 - sum;
 
   return cdig;
   // returns the newly varified zipcode
 }
-string barcode(int zip)
-{
+string barcode(int zip) {
   /*
     This function is so lame all it does is places bars on the end of barcodes
   */

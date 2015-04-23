@@ -9,8 +9,7 @@
 #include <string>
 using namespace std;
 
-int main()
-{
+int main() {
   int zip;
 
   // enter zip code as 5-digit integer;
@@ -20,8 +19,7 @@ int main()
 
   // validate; quit is zip is not 5-digit;
 
-  if (zip < 10000 or zip > 99999)
-    {
+  if (zip < 10000 or zip > 99999) {
       cout << "Invalid zip code";
       return 1;
     }
@@ -48,8 +46,7 @@ int main()
   string bar = ""; // initialize to empty string;
 
   // all bar codes for d1 equal to 0,...9
-  switch (d1)
-    {
+  switch (d1) {
     case 0:
       bar = bar + "||:::";
       break;
@@ -86,8 +83,7 @@ int main()
 
   // all bar codes for d2 equal to 0,...9
 
-  switch (d2)
-    {
+  switch (d2) {
     case 0:
       bar = bar + "||:::";
       break;
@@ -124,8 +120,7 @@ int main()
 
   // all bar codes for d3 equal to 0,...9
 
-  switch (d3)
-    {
+  switch (d3) {
     case 0:
       bar = bar + "||:::";
       break;
@@ -162,8 +157,7 @@ int main()
       
   // all bar codes for d4 equal to 0,...9
 
-  switch (d4)
-    {
+  switch (d4) {
     case 0:
       bar = bar + "||:::";
       break;
@@ -200,8 +194,7 @@ int main()
 
   // all bar codes for d5 equal to 0,...9
 
-  switch (d5)
-    {
+  switch (d5) {
     case 0:
       bar = bar + "||:::";
       break;
@@ -251,8 +244,7 @@ int main()
 
   // all bar codes for checkdigit equal to 0,...9
 
-  switch (checkdigit)
-    {
+  switch (checkdigit) {
     case 0:
       bar = bar + "||:::";
       break;

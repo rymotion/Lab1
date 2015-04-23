@@ -13,8 +13,7 @@ string digit_to_bars(int);
 int checkdigit(int,int,int,int,int);
 string barcode(int);
 
-int main()
-{
+int main() {
   int zip;
 
   // enter zip code as 5-digit integer;
@@ -24,8 +23,7 @@ int main()
 
   // validate; quit is zip is not 5-digit;
 
-  if (zip < 10000 or zip > 99999)
-    {
+  if (zip < 10000 or zip > 99999) {
       cout << "Invalid zip code";
       return 1;
     }
@@ -39,8 +37,7 @@ int main()
 
 // convert digit into corresponding barcode;
 
-string digit_to_bars (int dig)
-{ 
+string digit_to_bars (int dig) { 
   string bars;
 
   switch (dig)
@@ -86,8 +83,7 @@ string digit_to_bars (int dig)
 // otherwise, subtract sum from the smallest multiple of 10 that
   // is greater than sum; this will be value 1,...9;
 
-int checkdigit(int d1, int d2, int d3, int d4, int d5)
-{
+int checkdigit(int d1, int d2, int d3, int d4, int d5) {
   int cdig;
   int sum = d1 + d2 + d3 + d4 + d5;
   if (sum % 10 == 0)
@@ -98,8 +94,7 @@ int checkdigit(int d1, int d2, int d3, int d4, int d5)
   return cdig;
 }
 
-string barcode(int zip)
-{
+string barcode(int zip) {
   // extract individual digits from zip code;
 
   int d1,d2,d3,d4,d5;
