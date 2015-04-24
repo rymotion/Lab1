@@ -4,46 +4,45 @@ CSE 202 Lab 3
 */
 #include "ccc_win.h"
 
-// Project: lab3
 
 class Chutist {
-public:
+	public:
 	// default;
-Chutist() {
-	Point loc = Point(1250,1000);
-}
-
-// constructor of Chutist object at Point loc;
-Chutist(Point loc) {
-// code here
-double he_x = loc.get_x();
-double he_y = loc.get_y();
-}
-// accessor function: displays the chutist at location to the cwin
-void move(int dx, int dy) {
-	a.move(dx,dy);
-	b.move(dx,dy);
-	c.move(dx,dy);
-	d.move(dx,dy);
-}
-void display(bool chute) const {
-// displays the chutist at the Point location.If i is negative the chute is closed. If i is positive, it is open.
-	if (chute == true){// chute if open
-		cwin << Line(a,b);
-		cwin << Line(b,c);
-		cwin << Line(c,a);
-
-		cwin << Message(Point(100,100), "Landing Success");
-	} else {// chute is closed
-		cwin << Chutist(Point);
+	Chutist() {
+		Point loc = Point(1250,1000);
 	}
-}
-private:
-	Point loc;// location of chutist
-	Point a;// These points -a,b,&c- are the
-	Point b;// points used to generate the parachute
-	Point c;// when active.
-	Point d;// This is probably going to be the chutist IDK.
+
+	// constructor of Chutist object at Point loc;
+	Chutist(Point loc) {
+		// code here
+		double he_x = loc.get_x();
+		double he_y = loc.get_y();
+	}
+	// accessor function: displays the chutist at location to the cwin
+	void move(int dx, int dy) {
+		a.move(dx,dy);
+		b.move(dx,dy);
+		c.move(dx,dy);
+		d.move(dx,dy);
+	}
+	void display(bool chute) const {
+		// displays the chutist at the Point location.If i is negative the chute is closed. If i is positive, it is open.
+		if (chute == true){// chute if open
+			cwin << Line(a,b);
+			cwin << Line(b,c);
+			cwin << Line(c,a);
+
+			cwin << Message(Point(100,100), "Landing Success");
+		} else {// chute is closed
+			cwin << Chutist(Point);
+		}
+	}
+	private:
+		Point loc;// location of chutist
+		Point a;// These points -a,b,&c- are the
+		Point b;// points used to generate the parachute
+		Point c;// when active.
+		Point d;// This is probably going to be the chutist IDK.
 };
 
 // the main program that will create the output display
@@ -65,7 +64,8 @@ int ccc_win_main() {
 	// this does the speed and fall calculations
 	while (height > 0) {
 		vel_y += 32;
-		vel_x += 16
+		vel_x += 16;
+		
 		if (vel_y > 174) {
 			vel_y = 174;
 		}
@@ -79,6 +79,7 @@ int ccc_win_main() {
 				cwin << Message(Point(300,100), "Landing Velocity:", y_velocity);
 			}
 		}
+
 		he_y -= vel_y;
 		he_x -= vel_x;
 		// updates the window and graphics of ball dropping
