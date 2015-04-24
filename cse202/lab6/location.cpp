@@ -6,6 +6,7 @@ Location::Location(){
 	address = "";
 	building = "";
 	room = "";
+	//pretty much the same thing that was with the Person class
 }
 Location::Location(string addr, string bldg, string rm){
 	address = addr;
