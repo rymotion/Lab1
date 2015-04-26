@@ -18,6 +18,8 @@
     return firstname;
   }
   string Person::getName() {
+    //See only keyword such as virtual is only required in the 
+    //class interface
     string sname;
     sname = firstname + " " + lastname;
     return sname;

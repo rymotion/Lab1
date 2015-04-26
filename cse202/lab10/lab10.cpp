@@ -1,6 +1,8 @@
 //Ryan Paglinawan
 //CSE 202
 //Homework 4
+
+//I believe that this is working IDK
 #include <iostream>
 #include <vector>
 #include <string>
@@ -67,14 +69,6 @@ template<typename T>
 void Mlist<T>::addend(T x){
     mlist.insert(mlist.end(), x);
 }//done
-/*template<typename T>
-void Mlist<T>::addorder(T x){
-    typename vector <T>::iterator ix;
-    ix = mlist.begin();
-    while ((ix!=mlist.end()), x > *ix){
-            ix++;
-            mlist.insert(ix, x);
-        }*/
 template<typename T>
 void Mlist<T>::removefront(){
     mlist.erase(mlist.begin());
